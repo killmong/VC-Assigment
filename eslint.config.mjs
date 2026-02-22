@@ -5,6 +5,9 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   // Override default ignores of eslint-config-next.
   globalIgnores([
+    "react",
+    " ' ",
+    "  ",
     // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",

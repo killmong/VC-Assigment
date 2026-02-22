@@ -1,0 +1,16 @@
+import { useEffect, useState } from "react";
+
+export default function useWorkspaceStorage(key: any, initialValue: any) {
+  const [state, setState] = useState(initialValue);
+
+  useEffect(() => {
+    const saved = localStorage.getItem(key);
+    if (saved) setState(JSON.parse(saved));
+  }, [key]);
+
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(state));
+  }, [key, state]);
+
+  return [state, setState];
+}
