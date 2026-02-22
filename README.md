@@ -110,3 +110,5 @@ State & DB: React Hooks (useState, useMemo) + Browser localStorage
 🧠 Design Philosophy (The "Vibe")
 
 The UI was built with a strict adherence to modern SaaS design principles. Heavy use of whitespace, subdued slate/indigo color palettes, subtle borders, and micro-interactions (hover states, transitions) ensures the tool feels like a premium, high-trust environment suitable for VC Partners and Analysts.
+Live Link - https://vc-assigment.vercel.app/
+
